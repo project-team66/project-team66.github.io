@@ -159,34 +159,33 @@ video {
   max-height: 100%;
 }
 
-/* Show the video container when its corresponding anchor is targeted */
 .video-container:target {
   display: block;
 }
 
 
 
-.cards .contents{
+.Ss .contents{
   margin-top: 30px;
 }
 
-.card {
+.S {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(238, 238, 238);
-  width: calc(100% - 40px); /* Adjusted width to fit inside the frame */
-  max-width: 600px; /* Added max-width to prevent exceeding frame width */
+  width: calc(100% - 40px); 
+  max-width: 600px; 
   overflow: hidden;
   border-radius: 10px;
-  margin: 0 auto; /* Center the card horizontally */
+  margin: 0 auto; 
   transition: 0.7s ease;
-  margin-bottom: 20px; /* Added margin to separate cards vertically */
+  margin-bottom: 20px; 
 }
 
 
-.card:hover{
+.S:hover{
   transform: scale(1.1);
 }
-.card:hover{
+.S:hover{
   transform: scale(1.1);
 }
 
@@ -194,7 +193,7 @@ video {
   width: 100%;
 }
 
-.card:hover .image{
+.S:hover .image{
   opacity: 0.9;
 }
 
