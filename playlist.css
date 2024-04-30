@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    /* Changed font-family to 'Cairo' */
+    box-sizing: border-box;
+}
+
+/* New CSS code for the header */
+/* New Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(39, 60, 117);
+    color: white;
+    padding: 10px 50px;
+}
+
+.main-header .logo {
+    font-size: 1.5em;
+}
+
+.main-header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-header nav ul li {
+    margin-right: 20px;
+}
+
+.main-header nav ul li:last-child {
+    margin-right: 0;
+}
+
+.main-header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.main-header nav ul li a:hover {
+    color: rgb(136, 136, 136);
+}
+
+
+body a:hover {
+    color: rgb(136, 136, 136);
+    transition: ease 0.1s;
+    /* Corrected transition syntax */
+    font-size: 10px;
+    /* Font size added for hover effect */
+    background-color: rgb(46, 60, 122);
+    transform: scale(1.1);
+}
+
+body a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 300;
+    background-color: rgb(30, 45, 112);
+    color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.carsour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(39, 60, 117);
+    padding: 0px 80px;
+    background-color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.python {
+    padding: 50px 100px;
+    color: rgb(39, 60, 117);
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.python .content-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Reverse the order of content */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.python .content-wrapper .text-wrapper {
+    flex: 1;
+    margin-right: 0px;
+    /* Add margin to separate text from image */
+    margin-left: 60px;
+    font-size: 3.7em;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.python .content-wrapper .text-wrapper .text2-wrapper {
+    flex: 1;
+    margin-top: 40px;
+    margin-bottom: 20;
+    font-size: 0.3em;
+    line-height: 1.3;
+}
+
+.python .content-wrapper .text-wrapper .head-wrapper {
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 0.3em;
+    line-height: 1.3;
+}
+.python .content-wrapper .text-wrapper .phrase-wrapper {
+    font-size: 0.5em;
+    margin-top: 80px;
+    margin-bottom: 30;
+    
+
+}
+.python .content-wrapper .text-wrapper .phrase2-wrapper {
+    font-size: 0.3em;
+    margin-top: 15px;    
+    line-height: 1.5;
+
+}
+
+
+.python .content-wrapper .python-img {
+    width: 1000px;
+    height: auto;
+}
+
+.phrase {
+    margin-left: 650px;
+    margin-bottom: 70px;
+    margin-top: 120px;
+    font-size: 3em;
+    color: rgb(39, 60, 117);
+
+}
+
+.vidio {
+    width: 1400px;
+    height:400px ;
+    margin-left: 250px;
+}
+
+.head-and-table {
+    display: flex;
+    align-items: flex-start;
+}
+
+.head {
+    color: rgb(29, 59, 143);
+    margin-left: 270px;
+    margin-top: 120px;
+    line-height: 1.5;
+    font-size: 1em;
+    flex: 1;
+    padding-right: 20px;
+}
+ .table-container {
+    flex: 1;
+    margin-top: 120px;
+    margin-right: 120px;
+    margin-bottom: 100px;
+ }
+.table {
+    border-width: 5px;
+    border-color: rgb(39, 60, 117);
+    border-radius: 2px;
+    border-style: solid;
+}
+
+tr {
+    width: 100px;
+    height: 30px;
+}
+
+td {
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+    color: rgb(39, 60, 117);
+}
+
+th {
+    font-size: larger;
+    color: #273c75;
+    width: 300px;
+}
+.courses {
+    color: #273c75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    font-size: 2.5em;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+.project .content-container {
+    flex: 1;
+    margin-right: 10px;
+}
+ .project.content{
+    margin-top: 30px;
+ }
+ .project-card{
+    background-color: #273c75;
+    border: 1px,solid,#fff;
+    min-height: 1em;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    margin-left: 80px;
+
+ }
+ .project-card:hover{
+    transform: scale(1.1);
+ }
+ .project-image img{
+    width: 5em;
+    background-attachment: fixed;
+ }
+ .project-card:hover .project-image{
+    opacity: 0.9;
+ }
+ .project-info{
+    padding: 1em;
+ }
+ .project-catagory{
+    font-size: 0.8em;
+    color: #000;
+    margin-left: 20px;
+ }
+ .project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 20px;
+ }
+ body b:hover {
+    color: rgb(136, 136, 136);
+    transition: ease 0.1s;
+    /* Corrected transition syntax */
+    font-size: 10px;
+    /* Font size added for hover effect */
+    background-color: rgb(46, 60, 122);
+    transform: scale(1.1);
+}
+
+body b {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 300;
+    background-color: rgb(30, 45, 112);
+    color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    margin-right: 36px;
+}
+ .lev{
+    margin-left: 35px;
+ }
+#non{
+    display: flex;
+    justify-content: flex-start;
+   padding-left: 5px;
+}
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 50px 15%;
+    background-color: rgb(39, 60, 117);
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.col-2 {
+    flex-grow: 1;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid rgb(39, 60, 117);
+    /* Corrected border syntax */
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.now {
+    border-color: white;
+}
+
