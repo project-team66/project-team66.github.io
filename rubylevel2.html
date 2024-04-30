@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Level 2</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" type="text/css" href="css/styleruby.css">
+   <script src="js/scriptruby.js"></script>
+</head>
+<body dir="ltr">
+  <header>
+    <h1>Level 2</h1>
+  </header>
+  <div id="questionii1" class="question" style="display: block;">
+    <h2><i>1- Arrays</i></h2>
+    <h4>Arrays are elements arranged in a specific order, and contain any type of data, whether strings, integers, floats, or any other type. The elements are placed in square brackets [ ] and the elements are separated from each other using commas. Example:</h4>
+    <img src="images/array.jpg">
+    <h4>When you print the array, it will print all the elements inside it: </h4 >
+     <img src="images/array2.jpg">
+    <h4> Each element within the array has its own index starting from the number zero, meaning the first element has its own index of zero, and the second element has its own index of one. we can print an element using its index, by mentioning the name of the array and inside it the index of the element. Example:</h4>
+    <img src="images/array31.jpg"> &nbsp&nbsp&nbsp&nbsp ----> &nbsp&nbsp&nbsp&nbsp <img src="images/array32.jpg">
+    <p>what is the output of it?</p>
+    <img src="images/array33.jpg">
+    <input type="text" id="answerii1">
+    <button onclick="checkAnswerii('answerii1', 'questionii1', 'questionii2')">Continue</button>
+  </div>
+  <div id="questionii2" class="question">
+    <h2><i>2- Array properties</i></h2>
+    <h3>Adding an Element to an Array:</h3>
+
+    <h4><pre>1. Using<code> push </code> or << (Append to End of Array):
+    You can use the push method or the << operator to add a new element to the end of an array:
+
+    <img src="images/push.jpg">
+    2. Using <code> unshift </code> (Prepend to Beginning of Array):
+    You can use <code> unshift </code> to add an element to the beginning of an array:
+
+    <img src="images/unshift.jpg"></pre></h4>
+
+    <h3> Removing an Element from an Array: </h3>
+
+    <h4><pre>1. Using <code> pop </code> (Remove Last Element):
+    The pop method removes and returns the last element of the array:
+
+    <img src="images/pop.jpg">
+
+    2. Using <code> shift </code> (Remove First Element):
+    The <code> shift </code>  method removes and returns the first element of the array:
+
+    <img src="images/shift.jpg">
+
+    3. Using <code> delete_at </code> (Remove Element by Index):
+    You can use <code> delete_at </code> to remove an element at a specific index in the array:
+
+    <img src="images/delete.jpg">
+
+    These methods provide flexibility in adding and removing elements from arrays in Ruby. Choose the method that best fits your needs based on whether you want to add to the beginning or end of the array, or remove elements from specific positions.
+    The <code> .inspect </code> property can be used to display the array as it is on a single line inside square brackets</pre></h4>
+    <p>What is the output?</p>
+    <img src="images/aq.jpg">
+    <input type="text" id="answerii2">
+    <button onclick="checkAnswerii('answerii2', 'questionii2', 'questionii3')">Continue</button>
+  </div>
+  <div id="questionii3" class="question">
+    <h4>3-The value of an element inside the array can also be changed by its index. Write the name of the array and inside it is the index offered the element we want to change and write the new value for it, Example:</h4>
+    <img src="images/arrays.jpg">
+    <h4>The second element will change from mohamed to sarah</h4>
+    <p>what is the output?:</p>
+    <img src="images/arrayfq.jpg">
+    <input type="text" id="answerii3">
+    <button onclick="checkAnswerii('answerii3', 'questionii3', 'questionii4')">continue</button>
+  </div>
+  <div id="questionii4" class="question">
+    <h2><i>4- Hash map</i></h2>
+    <h4>In Ruby, a Hash Map is a data structure used to store data in the form of key-value pairs. It allows you to store multiple values and access them quickly using a unique key for each value.In Ruby, you can create a Hash Map using curly braces {} and specify the keys and values by separating them with commas. Here's an example:</h4>
+    <img src="images/hashmap.jpg"> 
+    <h4>In order to print the name here - Sarah - we must write the name of the hash, and between the square brackets and the quotes, we write its key -name-</h4>
+    <h4>You can also easily add and remove keys and values, and update existing values. Hash Maps are widely used in Ruby in many applications due to their speed of access and ability to store data in an organized manner.</h4>
+    <p>what is the output?:</p>
+    <img src="images/hashmapq.jpg">
+    <input type="text" id="answerii4">
+    <button onclick="checkAnswerii('answerii4', 'questionii4', 'questionii5')">continue</button>
+  </div>
+  <div id="questionii5" class="question">
+    <h2><i>5- Time.now</i></h2>
+    <h4>In Ruby, you can display today's date and time together using Time.now, and you can display only the hour, minute, or month using the same property with the name of the thing you want to display, for example</h4>
+    <img src="images/timenow.jpg">  &nbsp&nbsp&nbsp&nbsp ----> &nbsp&nbsp&nbsp&nbsp <img src="images/timenow2.jpg">
+    <p>In Ruby: what do we use when we want to print the month?</p>
+    <input type="text" id="answerii5">
+    <button onclick="checkAnswerii('answerii5', 'questionii5', 'questionii6')">continue</button>
+  </div>
+  <div id="questionii6" class="question">
+    <h2><i>6- gets</i></h2>
+    <h4><pre> In Ruby, you can use the gets method to receive input from the user via the standard input (usually the command-line interface). This method reads a line of text from the input and returns it as a string value. You can then use this input for various purposes in your program.
+    
+    Here's a detailed explanation of how to use <code> gets </code>: </pre></h4>
+    
+    <h3> 1. Receiving Input: </h3>
+    
+    <h4><pre> To prompt the user for input and store it in a variable, you can use <code> gets </code>. For example:
+    
+    <img src="images/g1.jpg">
+    In this code snippet:
+    - <code> puts </code> is used to display a message prompting the user to enter their name.
+    - <code> gets </code> reads the input provided by the user (including any newline character) and assigns it to the variable <code> user_name </code>. </pre></h4>
+    
+    <h3>2. Removing Newline Characters (chomp method): </h3>
+    <h4><pre> The <code> gets </code> method includes the newline character (\n) at the end of the input string. To remove this newline character and clean up the input, you can use the <code> chomp </code> method in conjunction with <code> gets </code>:
+    
+    <img src="images/g2.jpg">
+    Now, when the user inputs their name and presses Enter, the <code> chomp </code> method will remove the newline character from the end of the string stored in <code> user_name </code>. </pre></h4>
+    
+    <h3>3. Using the Input: </h3>
+    <h4><pre> Once you've captured the user input in a variable, you can use it in your program as needed:
+    
+    <img src="images/g3.jpg">
+    Here, we're using string interpolation (#{}) to include the user's name (stored in user_name) in a greeting message. </pre></h4>
+    
+    <h3> 4. Handling Input Data: </h3>
+    <h4><pre>>Keep in mind that gets returns a string, so if you need to work with numerical values entered by the user (e.g., integers or floating-point numbers), you'll need to convert the string input to the desired data type using methods like to_i (for converting to integer) or to_f (for converting to float).
+    
+    Here's a complete example demonstrating the usage of <code> gets </code> and <code>chomp</code>:
+    
+    <img src="images/g4.jpg">
+    
+    In summary, gets is a versatile method for receiving user input in Ruby, and chomp is commonly used to clean up the input by removing trailing newline characters. This combination allows you to interact with users and incorporate their input into your programs effectively.</pre></h4>
+    <p>What function is used to request input from the user and return a text value?</p>
+    <input type="text" id="answerii6">
+    <button onclick="checkAnswerii('answerii6', 'questionii6', 'questionii7')">continue</button> 
+  </div>  
+  <div id="questionii7" class="question"> 
+    <h2><i>7- File.read</i></h2>
+    <h4><pre>In programming, specifically in languages like Ruby, the term "read file" refers to the process of reading the contents of a file from disk into memory. This operation allows you to access and manipulate the data stored within a file using your program.In Ruby, you can use the File.read method to read the entire contents of a file as a single string. Here's how you typically use it:
+    
+    <img src="images/read.jpg">
+    In this example:
+    <code>File.read("path/to/file.txt") </code>opens the file specified by the path <code>"path/to/file.txt" </code>and reads its contents into a string variable content.
+    <code>puts content </code> then prints the content of the file to the console.</pre></h4>
+    <p>What function is used to read a file as a single text?</p>
+    <input type="text" id="answerii7">
+    <button onclick="checkAnswerii('answerii7', 'questionii7', 'questionii8')">continue</button>
+  </div>
+  <div id="questionii8" class="question">
+    <h2><i>8- File.open</i></h2>
+    <h4><pre>In Ruby,<code> File.open </code> is a method used to interact with files on your system. It allows you to open a file and perform operations such as reading, writing, or appending data to the file. The basic syntax of <code> File.open </code> is as follows:
+    
+    <img src="images/open.jpg">
+    Here's a breakdown of each component:
+    • <code>filename</code>: This is a string representing the path to the file you want to open. It can be a relative or absolute path.
+    • <code>mode</code>: This is a string specifying the mode in which you want to open the file. The most common modes are:
+    <code><var>"r"</var></code>: Read-only mode. Opens the file for reading. Raises an exception if the file does not exist.
+    <code><var>"w"</var></code>: Write mode. Opens the file for writing. If the file does not exist, it creates a new file. If the file already exists, it truncates (clears) its contents.
+    <code><var>"a"</var></code>: Append mode. Opens the file for writing at the end of the file. If the file does not exist, it creates a new file.
+    The <code> File.open </code> method takes care of opening and closing the file for you. Inside the do block, you can perform operations on the opened file using the file object (file) that is yielded to the block. This object allows you to read from, write to, or manipulate the file contents. </pre></h4>
+    <p>What components are used inside the File.open function?</p>
+    <input type="text" id="answerii8">
+    <button onclick="checkAnswerii('answerii8', 'questionii8', 'questionii9')">continue</button>
+  </div>
+  <div id="questionii9" class="question">
+    <h2>9- Examples of <code> File.open </code> Usage</h2>
+    <h3> 1-Reading from a File </h3>
+    
+    <img src="images/r.jpg">
+    <h4><pre> In this example:
+    • We open the file <code> "file.txt" </code> in read-only mode <code><var>("r")</var></code>.
+    • We read the entire content of the file into a variable <code> content </code> using <code> file.read <</code>.
+    • We then print the content of the file to the console using <code> puts </code>.</pre></h4>
+    
+    <h3> 2- Writing to a File </h3>
+  
+    <img src="images/w.jpg">
+    <h4><pre> In this example:
+    •We open or create a file named <code> "output.txt" </code> in write mode <code><var> ("w") </var></code>.
+    • We write the specified string to the file using <code> file.write </code>.
+    The file is automatically closed after the block execution.</pre></h4>
+    
+    <h3> 3-Error Handling </h3>
+    <h4><pre> It's important to handle errors when working with files. For example:
+    
+    <img src="images/E.jpg">
+    Here, we use a <code> begin/rescue </code> block to catch the <code> Errno::ENOENT </code> (file not found) error that may occur if the specified file does not exist.</pre></h4>
+    <p>What function is used to open files?</p>
+    <input type="text" id="answerii9">
+    <button onclick="checkAnswerii('answerii9', 'questionii9', 'questionii10')">continue</button>
+  </div>
+  <div id="questionii10" class="question">
+    <h2><i>10- Functions and Methods</i></h2>
+    <h4><pre>In Ruby, "functions" and "methods" are both pieces of code that perform specific tasks. The difference lies in their association with objects: </pre></h4>
+    
+    <h3> Functions :</h3>
+    <h4><pre> A function in Ruby is a set of instructions grouped under a specific name. You can call a function to execute these instructions when needed. To define a function in Ruby, you use the <code> def</code> keyword followed by the function name and a list of parameters (if any), and then the function code within a block.
+    
+    Here's a simple example of a function that prints a greeting message:
+    
+    <img src="images/function.jpg">
+    In this example, the <code> greet </code> function is defined to accept a <code> name </code> parameter and prints a greeting message using the passed parameter. </pre></h4>
+    
+    <h3> Methods :</h3>
+    <h4><pre> A method in Ruby is similar to a function but is associated with a specific object (instance). Methods are defined within class definitions and are used to perform operations on objects.
+    
+    When you define a method inside a class in Ruby, the object itself (referred to as <code> self </code>) is passed as a special parameter. This means the method can access the object's data and execute operations on it.
+    
+    Here's an example of defining a method inside a simple class:
+    
+    <img src="images/method.jpg">
+    
+    In this example, the <code> Person </code> class has a method <code> greet </code> that accesses the instance variable <code> @name </code> (which is set during object creation using <code> initialize </code>) and prints a greeting message specific to that instance of <code> Person </code>.
+    
+    Therefore, the main difference between a function and a method in Ruby is that a method is associated with a specific object and can be called using that object, whereas a function can be called independently as a standalone piece of code.</pre></h4>
+    <p>What is the output?</p>
+    <img src="images/fm.jpg">
+    <input type="text" id="answerii10">
+    <button onclick="checkAnswerii('answerii10', 'questionii10', 'questionii11')">continue</button>
+  </div>
+  <div id="finish" style="display:none;">
+    <h2>congratulations! you Completeed Level 2</h2>
+    <img src="images/congratulations.jpg">
+  </div>
+  <hr>
+  <!-- footer section starts -->
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Our website offers a huge collection of courses of great value</p>
+        <br>
+        <h3>What We Learn</h3>
+        <p>
+          - Learn new concepts from industry experts.<br>
+          - Teaching all programming languages until reaching professionalism.<br>
+          - Earn a shareable career certificate.<br>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: Genius Byte @ gmail.com.</p>
+        <p>Phone: 123-456-789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Genius Byte. All rights reserved!</p>
+    </div>
+  </footer>
+  <!--footer section End-->
+</body>
+</html>

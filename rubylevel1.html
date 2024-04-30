@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Level 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styleruby.css">
+    <script src="js/scriptruby.js"></script>
+</head>
+
+<body dir="ltr">
+    <header>
+        <h1>Level 1</h1>
+    </header>
+    <div id="introduction" tyle="display: block;">
+        <h2><i>1- Introduction to the Ruby language</i></h2>
+        <h3>Ruby is similar to Python in some aspects, and this can make it easier for people with experience in Python to understand Ruby, and vice versa. The two languages share some basic concepts like readability and focus on object-oriented theory, and they both excel as dynamic languages.
+        However, there are also differences between the two languages. Ruby tends to draw more inspiration from other languages like Perl and Smalltalk, while Python tends to be more influenced by traditional languages like C and Java.
+        In general, Ruby and Python resemble each other in some aspects, but each language has its unique features and its own community.</h3>
+        <img src="images/ruby.jpg">
+        <br>
+        <button onclick="showQuestions()">continue</button>
+    </div>
+    <div id="questioni1" class="question" style="display: none;">
+        <h4>2-Ruby is a simple programming language similar to Python, but you can print anything on the screen using the <span style="color: var(--main-color);">puts</span> feature instead of <span style="color: var(--main-color);">print</span>.</h4>
+        <h4>Example: <code>puts "Hello, world"</code> it will print <span style="color: var(--main-color);">Hello, world</span>, but don't forget the quotation marks.</h4>
+        <p>Complete to display Hello,world: <code> puts"Hello,..."</code></p>
+        <input type="text" id="answeri1">
+        <button onclick="checkAnsweri('answeri1', 'questioni1', 'questioni2')">Continue</button>
+    </div>
+    <div id="questioni2" class="question">
+        <h4>3-we can put any value inside any variable. you can give the variable any name</h4>
+        <h4>there are three types of variables. First, <span style="color: var(--main-color);">string</span> this we use when we set a variable with a text value, but the text must be inside quotation marks, whether this <span style="color: var(--main-color);"> "..."</span> or this <span style="color: var(--main-color);"> '...',</span> <var>x="school"</var></h4>
+        <h4>Second, <span style="color: var(--main-color);"> integer </span> , we use it when we set a variable with a number value. the number must not ba between quotation marks but the number must contain no decimal points, <var>y=5</var></h4>
+        <h4>Thirdly, <span style="color: var(--main-color);"> float</span> is used when we set a variable with a decimal value, <var> z=5.4</var></h4>
+        <p>What are the following types of variables, respecrively?<br><var> a="Ahmed", b=16, c=4.3</var></p>
+        <input type="text" id="answeri2">
+        <button onclick="checkAnsweri('answeri2', 'questioni2', 'questioni3')">continue</button>
+    </div>
+    <div id="questioni3" class="question">
+        <h4>4-<var>x=10</var>, when we want to print what is inside that variable, we use: <code>puts x</code></h4>
+         <h4>If we put the variables inside quotation marks, what is inside the quotation marks will be printed as is, but if we do not put the quotation marks, the compiler will start running from top to bottom and print the value inside the variable</h4>
+         <p><code><var>school="orman"</var><br>puts school</code><br> what will this print?</p>
+        <input type="text" id="answeri3">
+        <button onclick="checkAnsweri('answeri3', 'questioni3', 'questioni4')">continue</button>
+    </div>
+    <div id="questioni4" class="question">
+      <h4>5-<code><var>x=5<br>y=10</var><br>puts x+y</code><br> this will print 15, but<br> <code><var>x=5<br>y="10"</var><br>puts x+y</code><br>this will give me an error, because there is one integer variable and one string variable</h4>
+      <h4>To convert from <span style="color: var(--main-color);"> string</span> to <span style="color: var(--main-color);">float</span> we put <span style="color: var(--main-color);"> .to_i</span> next to the variable </h4>
+      <h4>Example: <code><var>x=5<br>y="10"<br>z=y.to_i<br></var>puts x+z</code><br> it will print 15.</h3>
+      <p>To convert from string to integer, what do we put next to the variable?</p>
+      <input type="text" id="answeri4">
+      <button onclick="checkAnsweri('answeri4', 'questioni4', 'questioni5')">continue</button>
+    </div>
+    <div id="questioni5" class="question">
+      <h2><i>6-logical operators</i></h2>
+      <h4>We use these signs in logical operations (>,<,=,==,!=,>=,<=,||,&&) and the result of the operation is true or false, such as if I say<var> x=5, y=4, z= x< y</var>, is it really y>x? No, so the value inside Z is false, and when you print z, it will write false.</h4>
+      <p>what is the output? <code><var>a=10<br>b=5<br>c=a > b<br></var>puts c</code></p>
+      <input type="text" id="answeri5">
+      <button onclick="checkAnsweri('answeri5', 'questioni5', 'questioni6')">continue</button>
+    </div>
+    <div id="questioni6" class="question">
+      <h4><pre>7- explanation of logical operations in Ruby:
+
+        1. && (AND): Checks if both conditions are true.
+        Example: 5>2 && 9< 15
+
+        2. || (OR): Checks if at least one condition is true.
+        Example: 1>0|| 1>2
+
+        3. ! (NOT): Negates the condition.
+        Example: x!=4
+
+        4. == (Equal to): Checks if two values are equal.
+        Example:  x == y
+
+        5. != (Not equal to): Checks if two values are not equal.
+        Example:  x != y
+
+        6. < (Less than): Checks if the first value is less than the second.
+        Example: 5< 6
+
+        7. > (Greater than): Checks if the first value is greater than the second.
+        Example: 10 > 8
+
+        8. <= (Less than or equal to): Checks if the first value is less than or equal to the second.
+        Example: 5<=5
+
+        9. >= (Greater than or equal to): Checks if the first value is greater than or equal to the second.
+        Example: 8>=5
+
+        These operations are used to check conditions and make decisions in your Ruby code.</pre> </h4>
+      <p>How do we write the and sign?</p>  
+      <input type="text" id="answeri6">
+      <button onclick="checkAnsweri('answeri6', 'questioni6', 'questioni7')">continue</button>
+    </div>
+    <div id="questioni7" class="question">
+      <h4>8- When we set a variable with one value and then set it with another value, the compiler will always record only the last value</h4>
+      <h4>Example: <code><var>x=5<br>x=7<br></var>puts x</code><br>it will print 7<br>Its value can also be changed by adding values to it, such as <var> x=x+2.</var> this means that the new value of <var>x</var>  is an addition of 2 to its last recorded value.</h4>
+      <p>what is the output?<br><code><var>x=4<br>x=x+10*2<br></var>puts x</code></p>
+      <input type="text" id="answeri7">
+      <button onclick="checkAnsweri('answeri7', 'questioni7', 'questioni8')">continue</button>
+    </div>
+    <div id="questioni8" class="question">
+      <h2><i>9- conditions</i></h2>
+      <h4>Conditions are used to make decisions based on specific values. The basic condition in Ruby is if, there is also (elseif, unless, else)</h4>
+      <h4><pre>
+      
+      <h3> 1. If-else :</h3>
+      - Executes a block of code if a specified condition is true, otherwise executes another block of code.
+      
+      <h3>2. If-elsif-else :</h3>
+      - Checks a series of conditions in sequence. If the first condition is true, it executes its block of code; if not, it checks the next condition, and so on. If none of the conditions are true, it executes the else block of code.
+      
+      <h3>3. Unless :</h3>
+      - Executes a block of code if a specified condition is false, otherwise executes another block of code.
+      
+      Each of these constructs allows you to control the flow of your program based on specific conditions.</pre></h4>
+      <h4>Examle: <code><var>x=10<br>if x>10<br>  puts "x greater than 10"<br> elseif x< 10<br> puts "x is smaller than 10"<br> else <br> puts "x equal 10" </var></code></h4>
+      <h4>The execution will start in order and with the correct condition it will execute what is inside, so it will print <var>x=10.</var></h4>
+      <p>what is the output?<br> <code><var> x=5<br>y=6<br> if x>y<br> puts "x is grater than y" <br> elseif x< y<br> puts "x is smaller than y"<br>else <br> puts "x equal y"</var></code></p>
+      <input type="text" id="answeri8">
+      <button onclick="checkAnsweri('answeri8', 'questioni8', 'questioni9')">continue</button>
+    </div>  
+    <div id="questioni9" class="question">
+      <h2><i>10- Loops</i></h2>
+      <h3>The "while" Loop: </h3>
+      <h4><pre>- Used when you need to repeat a piece of code as long as a certain condition is true.
+        - The condition is checked before executing the code, and if it's false initially, the code won't be executed at all.
+        - The condition can be any expression that evaluates to true or false.
+        - When the condition becomes false, the loop stops.
+        For example:
+        <code><var> x = 0 </var>
+        while<var> x < 5 </var> do
+        puts x
+        <var> x = x + 1 </var>
+        end</code>
+        This code prints numbers from 0 to 4. The loop continues as long as the condition x < 5 is true, and it stops when x becomes 5.</pre> </h4>
+      <h3>The "for" Loop:</h3>
+      <h4><pre>- Used when you need to iterate over a specific range of values.
+      - Typically used with ranges (e.g., 0..4), which specify a range of values to be iterated over.
+      - It iterates the code once for each value in the specified range.
+      For example:
+      <code>for i in 0..4 do
+      puts i
+      end</code>
+      This code prints numbers from 0 to 4. The loop iterates over each value in the range 0..4 and executes the code block once for each value.</pre> </h4>  
+      <p>What are the most popular types of loops in computer programming?</p>
+      <input type="text" id="answeri9">
+      <button onclick="checkAnsweri('answeri9', 'questioni9', 'questioni10')">continue</button>
+    </div>
+    <div id="finish" style="display:none;">
+      <h2>congratulations! you Completeed Level 1</h2>
+      <img src="images/congratulations.jpg">
+    </div>
+    <hr>
+  <!-- footer section starts -->
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Our website offers a huge collection of courses of great value</p>
+        <br>
+        <h3>What We Learn</h3>
+        <p>
+          - Learn new concepts from industry experts.<br>
+          - Teaching all programming languages until reaching professionalism.<br>
+          - Earn a shareable career certificate.<br>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: Genius Byte @ gmail.com.</p>
+        <p>Phone: 123-456-789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Genius Byte. All rights reserved!</p>
+    </div>
+  </footer>
+  <!--footer section end-->
+    </body>
+    </html>
