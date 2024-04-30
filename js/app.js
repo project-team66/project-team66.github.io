@@ -35,23 +35,8 @@ document.querySelectorAll('.submit-btn').forEach(function(button, index) {
 });
 
 
-document.getElementById('image1').addEventListener('click', function() {
-    openVideo('v1.mp4');
-});
-
-document.getElementById('image2').addEventListener('click', function() {
-    openVideo('v2.mp4');
-});
-
-document.getElementById('image3').addEventListener('click', function() {
-    openVideo('v3.mp4');
-});
-
-// Function to open video page in a new tab
 function openVideo(videoSrc) {
-    // Construct the URL for the video page
     var videoPageUrl = 'v1.html?src=' + encodeURIComponent(videoSrc);
-    // Open the video page in a new tab
     window.open(videoPageUrl, '_blank');
 }
 
