@@ -33,25 +33,36 @@
         <h2>Question 1:</h2>
         <div class="question">
             <pre>
-              #include &lt;stdio.h&gt;
-              int main()
-              {
-                  int a[5] = {1, 2, 3, 4, 5};
-                  int i;
-                  for (i = 0; i < 5; i++)
-                      if ((char)a[i] == '5')
-                          printf("%d\n", a[i]);
-                      else
-                          printf("FAIL\n");
-              }
+    What will be the output of the following C code?
+                
+     #include <stdio.h>
+    struct student
+    {
+        char *name;
+    };
+    struct student s;
+    struct student fun(void)
+    {
+        s.name = "newton";
+        printf("%s\n", s.name);
+        s.name = "alan";
+        return s;
+    }
+    void main()
+    {
+        struct student m = fun();
+        printf("%s\n", m.name);
+        m.name = "turing";
+        printf("%s\n", s.name);
+    }
             </pre>
         </div>
       
         <form class="answerForm">
-          <label><input type="radio" name="answer1" value="a"> The program will compile and print FAIL for 5 times</label><br>
-          <label><input type="radio" name="answer1" value="b"> The program will compile and print the output 5</label><br>
-          <label><input type="radio" name="answer1" value="c"> The program will compile and print the ASCII value of 5</label><br>
-          <label><input type="radio" name="answer1" value="d"> The compiler will flag an error</label><br>
+          <label><input type="radio" name="answer1" value="a"> compile time error</label><br>
+          <label><input type="radio" name="answer1" value="b"> alan newton alan</label><br>
+          <label><input type="radio" name="answer1" value="c"> alan alan newton</label><br>
+          <label><input type="radio" name="answer1" value="d"> newton alan alan</label><br>
       </form>
         <button class="submit-btn">Submit</button>
         <div class="result"></div>
@@ -61,20 +72,25 @@
         <h2>Question 2:</h2>
         <div class="question">
             <pre>
-                What will be the output of the following C code?
-                #include <stdio.h>
-                    void main()
-                    {
-                        char *s = "hello";
-                        char *p = s;
-                        printf("%p\t%p", p, s);
-                    }
+     What will be the output of the following C code?
+    #include <stdio.h>
+    struct student
+    {
+        char *name;
+    };
+    void main()
+    {
+        struct student s, m;
+        s.name = "st";
+        m = s;
+        printf("%s%s", s.name, m.name);
+    }
             </pre>
         </div>
         <form class="answerForm">
-            <label><input type="radio" name="answer2" value="a"> Different address is printed</label><br>
-            <label><input type="radio" name="answer2" value="b"> Same address is printed</label><br>
-            <label><input type="radio" name="answer2" value="c"> Run time error</label><br>
+            <label><input type="radio" name="answer2" value="a"> Compile time error</label><br>
+            <label><input type="radio" name="answer2" value="b"> st st</label><br>
+            <label><input type="radio" name="answer2" value="c"> Junk values</label><br>
             <label><input type="radio" name="answer2" value="d">  Nothing</label><br>
         </form>
         <button class="submit-btn">Submit</button>
@@ -85,21 +101,14 @@
         <h2>Question 3:</h2>
         <div class="question">
             <pre>
-                What will be the output of the following C code?
-                #include <stdio.h>
-                    void main()
-                    {
-                        char *s= "hello";
-                        char *p = s;
-                        printf("%c\t%c", p[0], s[1]);
-                    }
+     Which of the following return-type cannot be used for a function in C?
             </pre>
         </div>
         <form class="answerForm">
-            <label><input type="radio" name="answer3" value="a"> Run time error</label><br>
-            <label><input type="radio" name="answer3" value="b"> h e</label><br>
-            <label><input type="radio" name="answer3" value="c"> h h</label><br>
-            <label><input type="radio" name="answer3" value="d"> h l</label><br>
+            <label><input type="radio" name="answer3" value="a"> char *</label><br>
+            <label><input type="radio" name="answer3" value="b"> none of the mentioned</label><br>
+            <label><input type="radio" name="answer3" value="c"> void</label><br>
+            <label><input type="radio" name="answer3" value="d"> struct</label><br>
         </form>
         <button class="submit-btn">Submit</button>
         <div class="result"></div>
